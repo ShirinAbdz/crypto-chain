@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { searchCoin } from "../services/cryptoApi";
+import { searchCoin } from "../../services/cryptoApi";
 import { ThreeDots } from "react-loader-spinner";
 import styles from "../modules/Search.module.css";
 

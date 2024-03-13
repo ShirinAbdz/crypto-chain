@@ -1,9 +1,9 @@
-import ChrtUp from "../assets/chart-up.svg";
-import ChrtDwn from "../assets/chart-down.svg";
+import ChrtUp from "../../assets/chart-up.svg";
+import ChrtDwn from "../../assets/chart-down.svg";
 import { ThreeDots } from "react-loader-spinner";
 
 import styles from "../modules/TableCoin.module.css";
-import { marketChart } from "../services/cryptoApi";
+import { marketChart } from "../../services/cryptoApi";
 
 function TableCoin({ coins, isLoading, setChart }) {
   return (
@@ -35,8 +35,8 @@ function TableCoin({ coins, isLoading, setChart }) {
   );
 }
 
-const TableRow = ({
-  coin: {
+const TableRow = ({ coin, setChart }) => {
+  const {
     id,
     name,
     image,
@@ -44,15 +44,13 @@ const TableRow = ({
     total_volume,
     current_price,
     price_change_percentage_24h: price_change,
-  },
-  setChart,
-}) => {
+  } = coin;
   const showHandler = async () => {
     try {
       const res = await fetch(marketChart(id));
       const json = await res.json();
       console.log(json);
-      setChart(json);
+      setChart({ ...json, coin });
     } catch (error) {
       setChart(null);
     }

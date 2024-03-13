@@ -1,8 +1,13 @@
 import "./App.css";
-import HomePage from "./template/HomePage";
+import Layout from "./Layout/Layout";
+import HomePage from "./components/template/HomePage";
 
 function App() {
-  return <HomePage />;
+  return (
+    <Layout>
+      <HomePage />
+    </Layout>
+  );
 }
 
 export default App;
