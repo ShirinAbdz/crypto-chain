@@ -64,7 +64,7 @@ const TableRow = ({ coin, setChart }) => {
           <span>{symbol.toUpperCase()}</span>
         </div>
       </td>
-      <td>{name}</td>
+      <td >{name}</td>
       <td className={price_change > 0 ? styles.success : styles.error}>
         {price_change.toFixed(2)}%
       </td>

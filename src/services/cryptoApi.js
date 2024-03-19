@@ -9,6 +9,6 @@ const searchCoin = (query) => {
 };
 
 const marketChart = (coin) =>
-  `${BASE_URL}/coins/${coin}/market_chart?vs_currency=usd&days=7`;
+  `${BASE_URL}/coins/${coin}/market_chart?vs_currency=usd&days=14`;
 
 export { getCoinList, searchCoin, marketChart };

@@ -26,8 +26,8 @@ function Pagination({ page, setPage }) {
         </>
       )}
       <span>...</span>
-      <p>9</p>
-      <p>10</p>
+      <p className={page === 9 ? styles.selected : null}>9</p>
+      <p className={page === 10 ? styles.selected : null}>10</p>
       <button
         onClick={nextHandler}
         className={page === 10 ? styles.disabled : null}

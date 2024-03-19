@@ -38,13 +38,22 @@ function Chart({ chart, setChart }) {
           <ChartComponent data={convertData(chart, type)} type={type} />
         </div>
         <div className={styles.types} onClick={typeHandler}>
-          <button className={type === "prices" ? styles.selected : null}>
+          <button
+            id="prices"
+            className={type === "prices" ? styles.selected : null}
+          >
             Prices
           </button>
-          <button className={type === "market_caps" ? styles.selected : null}>
+          <button
+            id="market_caps"
+            className={type === "market_caps" ? styles.selected : null}
+          >
             Market Caps
           </button>
-          <button className={type === "total_volume" ? styles.selected : null}>
+          <button
+            id="total_volume"
+            className={type === "total_volumes" ? styles.selected : null}
+          >
             Total Volumes
           </button>
         </div>
@@ -59,7 +68,7 @@ function Chart({ chart, setChart }) {
           </div>
           <div>
             <p>Market Cap: </p>
-            <span>${chart.coin.market_caps}</span>
+            <span>${chart.coin.market_cap}</span>
           </div>
         </div>
       </div>
@@ -76,10 +85,10 @@ const ChartComponent = ({ data, type }) => {
         <Line
           type="monotone"
           dataKey={type}
-          stroke="#3874ff"
+          stroke=" #f21487"
           strokeWidth="2px"
         />
-        <CartesianGrid stroke="#404042" />
+        <CartesianGrid stroke="#40404276" />
         <YAxis dataKey={type} domain={["auto", "auto"]} />
         <XAxis dataKey="date" hide />
         <Legend />

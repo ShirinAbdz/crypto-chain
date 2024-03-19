@@ -1,6 +1,13 @@
+* {
+    font-family: "League Spartan", sans-serif;
+
+}
+
 .searchBox {
-    margin-top: 50px;
-    position: absolute;
+    display: flex;
+    margin-bottom: 50px;
+    justify-content: start;
+
 }
 
 .searchBox input {
@@ -9,38 +16,52 @@
     height: 50px;
     padding: 10px;
     font-size: 1.1rem;
-    color: #fff;
+    color: #ffffff;
     background-color: #23242e;
     border: none;
-    border-radius: 5px;
+    border-radius: 10px;
+    background: rgba(115, 113, 113, 0.45);
+
+
+
 }
 
 
 .searchBox select {
-    background-color: #23242e;
+    background: rgba(115, 113, 113, 0.45);
     height: 50px;
     border: none;
-    border-radius: 5px;
+    border-radius: 10px;
     margin-left: 20px;
     color: #fff;
     padding: 0 10px;
+    font-size: 1rem;
+
+}
+
+option {
+    padding: 5px;
+    margin: 5px;
 }
 
 .searchBox select:focus {
     outline: none;
 }
 
+
+
 .searchResult {
     position: absolute;
     text-align: center;
-    top: 60px;
+    transform: translateY(50px);
     width: 300px;
-    height: 400px;
-    border-radius: 5px;
+    height: 40vh;
+    border-radius: 12px;
     overflow-y: scroll;
-    background-color: #18181c;
+    background-color: #18181cf4;
     border: 2px solid #22262e;
     padding: 20px;
+    z-index: 1;
 }
 
 ::-webkit-scrollbar {
@@ -53,7 +74,7 @@
     display: flex;
     margin-bottom: 15px;
     padding-bottom: 5px;
-    border-bottom: 2px solid #22262e;
+    border-bottom: 2px solid #313231;
 }
 
 .searchResult li img {
@@ -61,3 +82,41 @@
     width: 25px;
     height: 25px;
 }
+
+
+/* 
+@media (max-width: 576px) {
+
+    .searchResult {
+        width: 35%;
+
+    }
+    
+}
+
+@media (min-width: 577px) and (max-width: 768px) { 
+    
+    .searchResult {
+        width: 36%;
+
+    }
+ }
+
+
+ 
+@media (min-width: 769px) and (max-width: 1200px) { 
+    
+    .searchResult {
+        width: 37%;
+
+    }
+ }
+
+/* 
+ @media (min-width: 993px) and (max-width: 1200px) { 
+    
+    .searchResult {
+        width: 37%;
+
+    }
+ } */

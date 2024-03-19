@@ -1,3 +1,7 @@
+* {
+    text-shadow: 0px 0px 2px #cccbcb7b;
+}
+
 .container {
     display: flex;
     justify-content: center;
@@ -8,28 +12,62 @@
 .table {
     width: 100%;
     border-collapse: collapse;
+    box-shadow: -5px 5px 13px #121212,
+        5px -5px 13px #242424;
+
 }
 
 .table thead {
     border-bottom: 1.2rem;
     margin-bottom: 20px;
+
+
+
+}
+
+.table thead tr {
+    background: linear-gradient(90deg, #f214879f, #c71cc7a2);
+
+
+
+}
+
+.table thead tr th {
+    text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.593);
+
 }
 
 .table th {
-    font-size: 1.2rem;
-    text-align: left;
+    font-size: 1.3rem;
+    text-align: center;
     padding: 10px 0;
+
+
 }
 
 .table tbody tr {
     height: 80px;
     border-bottom: 1px solid #22262e;
+    text-align: center;
     font-weight: 600;
-    font-size: 1.1rem;
+    font-size: 1rem;
+
+
+}
+
+.table td:nth-child(1) {
+    background: #63606085;
+}
+
+.table th,
+td {
+    border: 0.1px solid rgba(255, 255, 255, 0.067);
+
 }
 
 .symbol {
     display: flex;
+    justify-content: center;
     align-items: center;
     cursor: pointer;
 }
@@ -62,14 +100,26 @@
     height: 40px;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 576px) {
+
     .table {
-        display: block;
         overflow-y: scroll;
+        width: 100%;
+    }
+
+    table th:nth-child(4),
+    .table th:nth-child(5),
+    .table td:nth-child(4),
+    .table td:nth-child(5) {
+        display: none;
     }
 
     .table td,
     .table th {
-        padding: 0 10px;
+        padding: 8px 10px;
+        font-size: 1.1rem;
+
     }
+
+
 }
