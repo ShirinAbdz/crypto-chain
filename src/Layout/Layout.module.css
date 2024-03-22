@@ -1,14 +1,17 @@
-body {
-    margin: 0;
+* {
     padding: 0;
-    background: #1b1b1b;
-    font-family: "League Spartan", sans-serif;
+    margin: 0;
     box-sizing: border-box;
 }
 
 :root {
     --main-linear-gradient: linear-gradient(90deg, #f21487, #c71cc6);
     ;
+}
+
+body {
+    background: #1b1b1b;
+    font-family: "League Spartan", sans-serif;
 }
 
 
@@ -22,7 +25,7 @@ body {
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
     border-radius: 70px;
-    margin-bottom: 20px;
+    /* margin-bottom: 20px; */
     box-shadow: 0 0px 5px 0px rgba(226, 226, 229, 0.138);
 
 }
@@ -39,20 +42,13 @@ body {
 
 .header {
     display: flex;
-    /* height: 95vh; */
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    /* padding: 10px 20px; */
-    /* margin-bottom: 70px; */
     font-size: 1rem;
-    /* transform: translateY(-20px); */
-    border: 2px solid white;
+
     position: relative;
-
 }
-
-
 
 
 
@@ -61,33 +57,37 @@ body {
     flex-direction: row;
     justify-content: space-between;
     width: 100%;
-    border: 2px solid rgb(41, 255, 22);
-
+    margin-top: 70px;
+    margin-bottom: 120px;
 }
 
 
 
 .header .imageBox {
-    /* margin-top: 50px;
-    padding-top: 20px;
-    margin-left: 100px; */
-    width: 40%;
-    height: 540px;
-    /* overflow: hidden; */
-    box-shadow: #77ef9e;
-    border: 3px solid rgb(237, 18, 18);
     position: relative;
 
 }
 
-.bitcoin {
-    /* width: 500px; */
-    /* height: 540px; */
-    /* transform: translateY(20px); */
+.imageBox {
+    position: relative;
+}
+
+.imageBox .bitcoin img {
+    height: 100%;
     filter: drop-shadow(26px 26px 15px rgba(0, 0, 0, 0.907));
-    border: 2px solid rgb(102, 46, 214);
+    z-index: 2;
+    transform: translateX(35px);
+
+
+
+}
+
+
+
+.imageBox img {
     position: absolute;
-    /* z-index: 1; */
+    top: 0;
+    left: 0;
 
 }
 
@@ -95,10 +95,7 @@ body {
     width: 350px;
     height: 350px;
     background: #822261;
-    position: absolute;
     border-radius: 50%;
-    /* right: 150px; */
-    /* top: 350px; */
     z-index: -1;
     filter: blur(3rem);
 }
@@ -107,36 +104,19 @@ body {
     width: 150px;
     height: 150px;
     background: #77ef9e;
-    position: absolute;
     border-radius: 50%;
-    /* transform: translateY(-460px); */
-    /* left: 150px; */
     z-index: -2;
     filter: blur(3rem);
 }
 
 
 .Circle {
-    width: 350px;
-    /*   height: 350px;*/
-    position: absolute;
-    /*
-    padding: 0;
-    margin-left: 80px;
-    margin-top: 80px; */
-    margin: auto;
-    border: 2px solid brown;
+    width: 100%;
+    z-index: 1;
+    top: 90px;
+    margin-top: 50px;
+
 }
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -170,6 +150,12 @@ svg {
     border: 3px solid #fff;
     z-index: 1;
     background: var(--main-linear-gradient);
+}
+
+
+.footer img {
+    filter: drop-shadow(2px 2px 20px #000000);
+
 }
 
 .socialLinks ul li a .icon {
@@ -219,18 +205,17 @@ svg {
 }
 
 .headerContent .text {
-    /* margin-top: 100px; */
-    /* height: 30vh; */
+    margin-top: 80px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: first baseline;
-    width: 50%;
+    width: 400px;
     text-align: start;
-    /* line-height: 70px; */
+    line-height: 70px;
     text-shadow: 4px 4px 5px rgba(186, 183, 183, 0.178);
-    /* margin-left: 40px; */
-    border: 2px solid green;
+    margin-left: 40px;
+    row-gap: 100px;
 }
 
 .text {
@@ -238,7 +223,7 @@ svg {
 }
 
 .text h1 {
-    font-size: 4rem;
+    font-size: 3.5rem;
 }
 
 
@@ -282,13 +267,12 @@ svg {
 
 
 @media (max-width: 576px) {
-
-
-    .navbar img {
-        width: 120px;
-        height: 50px;
-        filter: drop-shadow(2px 2px 6px #DF1798);
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
     }
+
 
     .socialLinks ul li a {
         width: 45px;
@@ -308,35 +292,117 @@ svg {
     }
 
     .text h1 {
-        font-size: 2rem;
-        transform: translateY(90px);
-        padding: 0;
-        width: 200px;
+        font-size: 2.2rem;
+        transform: translateY(-50px);
+
+
+
+
+    }
+
+    .navbar img {
+        width: 120px;
+        height: 40px;
+    }
+
+    .headerContent img {
+        margin: auto;
+        left: 25%;
+
     }
 
     .headerContent .imageBox {
-        width: 100%;
-        transform: translateX(-60px);
-
-
+        transform: translateY(-80px);
     }
 
-    .imageBox .Circle {
-        display: none;
+    .headerContent .imageBox .Circle {
+        padding-right: 20px;
+    }
+
+    .headerContent .imageBox .bitcoin img {
+        transform: translateX(-5px);
     }
 
     .headerContent {
         display: flex;
-        height: 100vh;
         flex-direction: column;
-        transform: translateY(-100px);
-    }
-
-    .blurredCircle1 {
-        display: none;
+        margin-bottom: 20px;
     }
 
     .text table {
         display: none;
+
+    }
+
+    .imageBox {
+        position: relative;
+        z-index: 5;
+    }
+
+    .Circle {
+        width: 300px;
+        position: absolute;
+        transform: translateY(50px);
+
+    }
+
+    .headerContent {
+        margin-top: 60px;
+    }
+
+    .headerContent .text {
+        margin-left: 10px;
+        margin-bottom: 10px;
+        z-index: 4;
+    }
+}
+
+
+
+@media (min-width: 577px) and (max-width: 768px) {
+
+    .navbar {
+        width: 100%;
+
+    }
+
+
+
+    .navbar .socialLinks ul {
+        column-gap: 0;
+        margin: auto;
+        margin-right: 20px;
+
+    }
+
+    .headerContent .text h1 {
+        font-size: 2.4rem;
+    }
+
+    .headerContent .text {
+        width: 260px;
+
+        margin-left: 0;
+    }
+
+    .text table th {
+        font-size: 1.4rem;
+        filter: brightness(0.5);
+        font-weight: 400;
+    }
+
+
+
+    .Circle {
+        width: 250px;
+    }
+
+    .imageBox {
+        width: 250px;
+        z-index: -2;
+    }
+
+    .imageBox .bitcoin img {
+        transform: translateX(-10px);
     }
 }

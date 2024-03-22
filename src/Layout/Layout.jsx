@@ -1,5 +1,5 @@
 import styles from "../Layout/Layout.module.css";
-import Bitcoin from "../assets/bitcoin.svg";
+import Bitcoin from "../assets/foot.png";
 import Circle from "../assets/Circle.svg";
 import Logo from "../assets/cryptochain.png";
 import Footer from "../assets/footer.png";
@@ -73,10 +73,11 @@ function Layout({ children }) {
               </thead>
             </table>
           </div>
-
           <div className={styles.imageBox}>
             <img className={styles.Circle} src={Circle} alt="" />
-            <img className={styles.bitcoin} src={Bitcoin} alt="" />
+            <div className={styles.bitcoin}>
+              <img src={Bitcoin} />
+            </div>
             <div className={styles.blurredCircle1}></div>
             <div className={styles.blurredCircle2}></div>
           </div>
