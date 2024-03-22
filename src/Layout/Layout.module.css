@@ -46,6 +46,7 @@ body {
     align-items: center;
     justify-content: space-between;
     font-size: 1rem;
+    width: 100%;
 
     position: relative;
 }
@@ -266,7 +267,70 @@ svg {
 
 
 
-@media (max-width: 576px) {
+
+@media (min-width: 250px) and (max-width: 499px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border: 2px solid pink;
+        width: 100vw;
+        margin: 0;
+        padding: 0;
+    }
+
+    .navbar {
+        padding: 0;
+        width: 100vw;
+        margin: 0;
+        border: 2px solid pink;
+
+
+    }
+
+
+    .navbar img {
+        width: 150px;
+        height: 50px;
+        filter: drop-shadow(2px 2px 6px #DF1798);
+        justify-self: center;
+
+    }
+
+
+    .navbar .socialLinks {
+        display: none;
+    }
+
+    .headerContent {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 0;
+
+    }
+
+    .text table {
+        display: none;
+    }
+
+    .text h1 {
+        font-size: 2rem;
+        margin: 0;
+        border: 2px solid pink;
+        padding:0;
+        width: 200px;
+
+
+
+    }
+    
+}
+
+
+
+@media (min-width: 500px) and (max-width: 576px) {
     * {
         padding: 0;
         margin: 0;
