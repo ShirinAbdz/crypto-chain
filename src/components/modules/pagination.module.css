@@ -26,7 +26,6 @@
 .pagination p {
   display: inline-block;
   border: 1px solid rgb(63, 63, 58);
-  /* padding: 10px 10px */
   width: 30px;
   text-align: center;
   border-radius: 10px;
@@ -38,4 +37,35 @@
 
 .selected {
   background: linear-gradient(90deg, #f21487, #c71cc6);
+}
+
+@media (min-width: 280px) and (max-width: 499px) {
+  .pagination {
+    margin: auto;
+    width: 100px;
+    padding: 0;
+    margin: auto;
+  }
+
+  .pagination button {
+    width: 40px;
+    background: linear-gradient(90deg, #f21487, #c71cc6);
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    font-family: "League Spartan", sans-serif;
+  }
+
+  .pagination p {
+    display: inline-block;
+    border: 0.5px solid rgb(63, 63, 58);
+    text-align: center;
+    border-radius: 20px;
+    padding: 5px;
+    margin: 4px;
+  }
+
+
 }

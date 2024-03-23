@@ -7,27 +7,36 @@
 :root {
     --main-linear-gradient: linear-gradient(90deg, #f21487, #c71cc6);
     ;
+
 }
 
 body {
-    background: #1b1b1b;
     font-family: "League Spartan", sans-serif;
+    border: 2px solid blue;
+    background: #1b1b1b;
 }
 
 
 .navbar {
     width: 100%;
-    display: flex;
+    /* display: flex;
     flex-direction: row;
-    align-items: center;
+    align-items: center; */
     justify-content: space-between;
     background: rgba(115, 113, 113, 0.45);
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
     border-radius: 70px;
-    /* margin-bottom: 20px; */
+    margin-bottom: 20px;
     box-shadow: 0 0px 5px 0px rgba(226, 226, 229, 0.138);
 
+}
+
+.navbarContent {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
 }
 
 .navbar img {
@@ -265,42 +274,35 @@ svg {
     padding: 5px 20px;
 }
 
-
+/* 
 
 
 @media (min-width: 250px) and (max-width: 499px) {
     .container {
         display: flex;
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        border: 2px solid pink;
-        width: 100vw;
         margin: 0;
         padding: 0;
-    }
-
-    .navbar {
-        padding: 0;
-        width: 100vw;
-        margin: 0;
-        border: 2px solid pink;
-
+        background-color: rgb(56, 59, 223);
 
     }
+
 
 
     .navbar img {
         width: 150px;
         height: 50px;
         filter: drop-shadow(2px 2px 6px #DF1798);
-        justify-self: center;
 
     }
 
-
     .navbar .socialLinks {
         display: none;
+    }
+
+    .headerContent .text {
+        margin: 0;
+        width: 100%;
     }
 
     .headerContent {
@@ -308,7 +310,8 @@ svg {
         flex-direction: column;
         justify-content: center;
         margin: 0;
-
+        margin-bottom: 40px;
+        margin-top: 40px;
     }
 
     .text table {
@@ -319,13 +322,26 @@ svg {
         font-size: 2rem;
         margin: 0;
         border: 2px solid pink;
-        padding:0;
-        width: 200px;
+        padding: 0;
+        width: 180px;
 
 
 
     }
-    
+
+
+    .blurredCircle1 {
+        width: 100px;
+        height: 200px;
+    }
+
+    .imageBox .bitcoin {
+        width: 40px;
+        height: 40px;
+    }
+
+
+
 }
 
 
@@ -469,4 +485,4 @@ svg {
     .imageBox .bitcoin img {
         transform: translateX(-10px);
     }
-}
+} */

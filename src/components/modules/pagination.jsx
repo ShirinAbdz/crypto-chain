@@ -1,4 +1,7 @@
 import styles from "../modules/pagination.module.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faChevronRight , faChevronLeft } from "@fortawesome/free-solid-svg-icons";
+
 function Pagination({ page, setPage }) {
   const previousHandler = () => {
     if (page <= 1) return;
@@ -7,7 +10,7 @@ function Pagination({ page, setPage }) {
   const nextHandler = () => {
     if (page >= 10) return;
     setPage((page) => page + 1);
-  }; 
+  };
   console.log(page);
   return (
     <div className={styles.pagination}>
@@ -15,7 +18,7 @@ function Pagination({ page, setPage }) {
         onClick={previousHandler}
         className={page === 1 ? styles.disabled : null}
       >
-        previous
+        <FontAwesomeIcon icon={faChevronLeft} />
       </button>
       <p className={page === 1 ? styles.selected : null}>1</p>
       <p className={page === 2 ? styles.selected : null}>2</p>
@@ -32,7 +35,7 @@ function Pagination({ page, setPage }) {
         onClick={nextHandler}
         className={page === 10 ? styles.disabled : null}
       >
-        next
+        <FontAwesomeIcon icon={faChevronRight} />
       </button>
     </div>
   );

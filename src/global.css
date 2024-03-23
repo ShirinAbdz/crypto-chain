@@ -2,10 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
+
+
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
+  /* background: #1b1b1b; */
 }
+
 
 body {
   margin: auto;
@@ -13,6 +17,7 @@ body {
   min-height: 100vh;
   padding: 10px;
   color: #fff;
+  background-color: #1b1b1b;
 }
 
 h1 {
@@ -30,4 +35,3 @@ a {
   margin: 0;
   box-sizing: border-box;
 }
-

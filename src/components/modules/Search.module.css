@@ -84,39 +84,8 @@ option {
 }
 
 
-/* 
-@media (max-width: 576px) {
-
-    .searchResult {
-        width: 35%;
-
+@media (min-width: 280px) and (max-width: 499px) {
+    .searchBox input {
+        width: 100px;
     }
-    
 }
-
-@media (min-width: 577px) and (max-width: 768px) { 
-    
-    .searchResult {
-        width: 36%;
-
-    }
- }
-
-
- 
-@media (min-width: 769px) and (max-width: 1200px) { 
-    
-    .searchResult {
-        width: 37%;
-
-    }
- }
-
-/* 
- @media (min-width: 993px) and (max-width: 1200px) { 
-    
-    .searchResult {
-        width: 37%;
-
-    }
- } */

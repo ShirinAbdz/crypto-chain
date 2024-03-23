@@ -1,10 +1,16 @@
+:root {
+    --main-linear-gradient: linear-gradient(90deg, #f21487, #c71cc6);
+
+}
+
 .container {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    backdrop-filter: blur(5px);
+    backdrop-filter: blur(8px);
+    z-index: 5;
 }
 
 .cross {
@@ -61,8 +67,8 @@
 .types button {
     margin: 10px 20px;
     background-color: #18181cdb;
-    border: 1px solid #3874ff;
-    color: #3874ff;
+    border: 1px solid #f21487;
+    color: #fff;
     font-size: 1rem;
     padding: 5px 10px;
     border-radius: 5px;
@@ -70,13 +76,13 @@
 }
 
 .types .selected {
-    background-color: #3874ff;
+    background: var(--main-linear-gradient);
     color: #fff;
 }
 
 .details {
     display: flex;
-    justify-content:start;
+    justify-content: start;
     margin: 30px 20px;
     column-gap: 20px;
 }
@@ -88,6 +94,6 @@
 
 .details p {
     margin-right: 7px;
-    color: #3874ff;
+    color: #f21487;
     font-weight: 700;
 }

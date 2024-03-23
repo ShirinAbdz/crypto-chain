@@ -17,43 +17,58 @@ function Layout({ children }) {
   return (
     <div className={styles.container}>
       <header className={styles.header}>
-        <div className={styles.navbar}>
-          <div>
-            <img
-              className={styles.Logo}
-              src={Logo}
-              alt=" Crypto Chain's logo "
-            />
-          </div>
-          <div className={styles.socialLinks}>
-            <ul>
-              <li>
-                <a href="https://github.com/ShirinAbdz" target="_blank">
-                  <FontAwesomeIcon icon={faGithub} className={styles.icon} />
-                </a>
-              </li>
-              <li>
-                <a
-                  href="https://www.linkedin.com/in/shirin-abdollahzadeh-65b689199/"
-                  target="_blank"
-                >
-                  <FontAwesomeIcon
-                    icon={faLinkedinIn}
-                    className={styles.icon}
+        <div className={`container-fluid ${styles.navbar}`}>
+          <div className="row">
+            <div className="col-12">
+              <div className={styles.navbarContent}>
+                <div>
+                  <img
+                    className={styles.Logo}
+                    src={Logo}
+                    alt=" Crypto Chain's logo "
                   />
-                </a>
-              </li>
-              <li>
-                <a href="mailto:shiringohariii@gmail.com" target="_blank">
-                  <FontAwesomeIcon icon={faGoogle} className={styles.icon} />
-                </a>
-              </li>
-              <li>
-                <a href="https://twitter.com/Shirin_dev" target="_blank">
-                  <FontAwesomeIcon icon={faTwitter} className={styles.icon} />
-                </a>
-              </li>
-            </ul>
+                </div>
+                <div className={styles.socialLinks}>
+                  <ul>
+                    <li>
+                      <a href="https://github.com/ShirinAbdz" target="_blank">
+                        <FontAwesomeIcon
+                          icon={faGithub}
+                          className={styles.icon}
+                        />
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="https://www.linkedin.com/in/shirin-abdollahzadeh-65b689199/"
+                        target="_blank"
+                      >
+                        <FontAwesomeIcon
+                          icon={faLinkedinIn}
+                          className={styles.icon}
+                        />
+                      </a>
+                    </li>
+                    <li>
+                      <a href="mailto:shiringohariii@gmail.com" target="_blank">
+                        <FontAwesomeIcon
+                          icon={faGoogle}
+                          className={styles.icon}
+                        />
+                      </a>
+                    </li>
+                    <li>
+                      <a href="https://twitter.com/Shirin_dev" target="_blank">
+                        <FontAwesomeIcon
+                          icon={faTwitter}
+                          className={styles.icon}
+                        />
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
 
