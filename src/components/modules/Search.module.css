@@ -82,10 +82,10 @@ option {
     width: 25px;
     height: 25px;
 }
-
+/* 
 
 @media (min-width: 280px) and (max-width: 499px) {
     .searchBox input {
         width: 100px;
     }
-}
+} */

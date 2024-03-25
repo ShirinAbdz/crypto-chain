@@ -38,7 +38,7 @@
 .selected {
   background: linear-gradient(90deg, #f21487, #c71cc6);
 }
-
+/* 
 @media (min-width: 280px) and (max-width: 499px) {
   .pagination {
     margin: auto;
@@ -68,4 +68,4 @@
   }
 
 
-}
+} */
