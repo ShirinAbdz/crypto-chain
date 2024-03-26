@@ -73,10 +73,10 @@ function Layout({ children }) {
         </div>
 
         <div
-          className={`flex  justify-between xs:flex-col sm:flex-row md:flex-row lg:flex-row xl:flex-row 2xl:flex-row ${styles.headerContent}`}
+          className={`flex justify-between xs:flex-col sm:flex-row md:flex-row lg:flex-row xl:flex-row 2xl:flex-row ${styles.headerContent}`}
         >
           <div
-            className={`2xl:w-8/12 xl:w-6/12 md:w-4/12 sm:w-4/12 xs:w-12/12 ${styles.text}`}
+            className={`2xl:w-8/12 xl:w-6/12 lg:w-6/12 md:w-4/12 sm:w-4/12 xs:w-12/12 ${styles.text}`}
           >
             <h1>Simplify Your Crypto Experience</h1>
             <table>
@@ -98,8 +98,11 @@ function Layout({ children }) {
             <div className={`${styles.bitcoin}`}>
               <img src={Bitcoin} />
             </div>
-            <div className={styles.blurredCircle1}></div>
             <div className={styles.blurredCircle2}></div>
+
+            <div className={styles.blurredCircle1}></div>
+            <div className={styles.blurredCircle3}></div>
+
           </div>
         </div>
       </header>

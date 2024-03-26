@@ -2,6 +2,8 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
 }
 
 :root {
@@ -11,13 +13,10 @@
 }
 
 body {
-    font-family: "League Spartan", sans-serif;
-    border: 2px solid blue;
     background: #1b1b1b;
 }
 
 .container {
-    border: 2px solid salmon;
     padding: 0 0;
     background: #1b1b1b;
 
@@ -30,7 +29,7 @@ body {
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
     border-radius: 70px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     box-shadow: 0 0px 5px 0px rgba(226, 226, 229, 0.138);
     padding: 0;
 
@@ -73,50 +72,54 @@ body {
     width: 100%;
     margin-top: 70px;
     margin-bottom: 120px;
-    border: 2px solid yellow;
 }
 
 
 
-.header .imageBox {
-    position: relative;
-
-}
-
-.imageBox {
+.imageBox .bitcoin {
     position: relative;
 }
 
 .imageBox .bitcoin img {
+
     filter: drop-shadow(26px 26px 15px rgba(0, 0, 0, 0.907));
-    z-index: 2;
+    z-index: 5;
 
 }
 
 
 
-.imageBox img {
-    position: absolute;
-    top: 0;
-    left: 0;
-
-}
 
 .blurredCircle1 {
+    position: absolute;
+
     width: 350px;
     height: 350px;
     background: #822261;
     border-radius: 50%;
-    z-index: -1;
+    z-index: 4;
     filter: blur(3rem);
+    transform: translateY(-600px);
 }
 
 .blurredCircle2 {
+    position: absolute;
+
     width: 150px;
     height: 150px;
     background: #FEAE02;
     border-radius: 50%;
-    z-index: -2;
+    z-index: 2;
+    filter: blur(5rem);
+}
+
+.blurredCircle3 {
+    position: absolute;
+    width: 250px;
+    height: 250px;
+    background: #9493C9;
+    border-radius: 50%;
+    z-index: 4;
     filter: blur(4rem);
 }
 
@@ -124,9 +127,7 @@ body {
 .Circle {
     width: 320px;
     z-index: 1;
-    /* top: 90px; */
     margin-top: 50px;
-
 }
 
 
@@ -286,7 +287,6 @@ svg {
     width: 100%;
     margin-right: auto;
     margin-left: auto;
-    border: 2px solid green;
 }
 
 
@@ -301,6 +301,25 @@ svg {
         font-weight: 700;
         text-align: center;
     }
+
+    .socialLinks ul {
+        column-gap: 0.4rem;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+    }
+
+
+    .Logo {
+        display: none;
+
+
+    }
+
+    .navbarContent {
+        display: inline-block;
+    }
+
 }
 
 @media (max-width:639px) {
@@ -318,6 +337,16 @@ svg {
         display: flex;
         flex-direction: column;
     }
+
+    .Logo {
+        display: none;
+    }
+
+    .navbarContent {
+        display: inline-block;
+    }
+
+
 }
 
 @media (max-width:768px) {
@@ -329,7 +358,7 @@ svg {
     }
 }
 
-@media (max-width:1024px) {
+@media (max-width:1580px) {
 
 
     .text h1 {
