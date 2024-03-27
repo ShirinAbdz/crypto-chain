@@ -1,6 +1,6 @@
 import styles from "../Layout/Layout.module.css";
-import Bitcoin from "../assets/Bitcoin.png";
-import Logo from "../assets/cryptochain.png";
+import Bitcoin from "../assets/cloud.png";
+import Logo from "../assets/cryptochain.svg";
 import Footer from "../assets/footer.png";
 
 import React from "react";
@@ -76,33 +76,27 @@ function Layout({ children }) {
           className={`flex justify-between xs:flex-col sm:flex-row md:flex-row lg:flex-row xl:flex-row 2xl:flex-row ${styles.headerContent}`}
         >
           <div
-            className={`2xl:w-8/12 xl:w-6/12 lg:w-6/12 md:w-4/12 sm:w-4/12 xs:w-12/12 ${styles.text}`}
+            className={`2xl:w-8/12 xl:w-6/12 lg:w-6/12 md:w-7/12 sm:w-10/12 xs:w-12/12  ${styles.text}`}
           >
-            <h1>Simplify Your Crypto Experience</h1>
-            <table>
-              <thead>
-                <tr>
-                  <th>ReactJs</th>
-                  <th> JavaScript</th>
-                </tr>
-                <tr>
-                  <th>Tailwind</th>
-                  <th>CoinGecko</th>
-                </tr>
-              </thead>
-            </table>
+            <ul>
+              <li>
+                <h1>Best Pltfrom to Analyze Ctypto Currency Prices </h1>
+              </li>
+              <li>
+                <h3>
+                  Discover the ultimate platform for analyzing cryptocurrency
+                  prices. Our streamlined interface offers real-time updates,
+                  advanced charting, and expert market analysis. Whether you're
+                  a seasoned trader or new to crypto, we provide the tools for
+                  confident decision-making.
+                </h3>
+              </li>
+            </ul>
           </div>
           <div
-            className={`xs:w-12/12 sm:W-12/12 md:w-6/12 lg:w-6/12 xl:w-6/12 2xl:w-4/12 ${styles.imageBox}`}
+            className={` xs:w-4/12 sm:W-4/12 md:w-5/12 lg:w-5/12 xl:w-5/12 2xl:w-3/12 ${styles.bitcoin}`}
           >
-            <div className={`${styles.bitcoin}`}>
-              <img src={Bitcoin} />
-            </div>
-            <div className={styles.blurredCircle2}></div>
-
-            <div className={styles.blurredCircle1}></div>
-            <div className={styles.blurredCircle3}></div>
-
+            <img src={Bitcoin} />
           </div>
         </div>
       </header>

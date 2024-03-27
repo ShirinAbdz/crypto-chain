@@ -16,6 +16,7 @@ function TableCoin({ coins, isLoading, setChart }) {
         <table className={styles.table}>
           <thead>
             <tr>
+              <th>numder</th>
               <th>Coin</th>
               <th>Name</th>
               <th>Price</th>
@@ -58,6 +59,7 @@ const TableRow = ({ coin, setChart }) => {
 
   return (
     <tr>
+      <td></td>
       <td>
         <div className={styles.symbol} onClick={showHandler}>
           <img src={image} alt={`${symbol.toUpperCase()} logo`} />

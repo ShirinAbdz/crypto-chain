@@ -1,6 +1,14 @@
-* {
-    font-family: "League Spartan", sans-serif;
+:root {
+    --main-linear-gradient: linear-gradient(90deg, #f21487, #c71cc6);
+    --blue: #00C4F4;
 
+
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+* {
+    font-family: "Inter", sans-serif;
 }
 
 .searchBox {
@@ -20,7 +28,7 @@
     background-color: #23242e;
     border: none;
     border-radius: 10px;
-    background: rgba(115, 113, 113, 0.45);
+    background: rgba(113, 114, 115, 0.45);
 
 
 
@@ -28,7 +36,7 @@
 
 
 .searchBox select {
-    background: rgba(115, 113, 113, 0.45);
+    background: var(--blue);
     height: 50px;
     border: none;
     border-radius: 10px;
@@ -42,11 +50,16 @@
 option {
     padding: 5px;
     margin: 5px;
+    background-color: #313231fe;
+
 }
 
 .searchBox select:focus {
     outline: none;
+    border: 1px solid var(--blue);
+
 }
+
 
 
 
@@ -82,10 +95,11 @@ option {
     width: 25px;
     height: 25px;
 }
-/* 
+
+
 
 @media (min-width: 280px) and (max-width: 499px) {
     .searchBox input {
-        width: 100px;
+        width: 180px;
     }
-} */
+}
