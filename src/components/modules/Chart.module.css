@@ -1,14 +1,13 @@
 :root {
     --main-linear-gradient: linear-gradient(90deg, #f21487, #c71cc6);
     --blue: #00C4F4;
-
-
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+
 
 * {
-    font-family: "Inter", sans-serif;
+    box-sizing: border-box;
 }
 
 .container {
@@ -73,9 +72,10 @@
 }
 
 .types button {
+
     margin: 10px 20px;
     background-color: #18181cdb;
-    border: 1px solid #f21487;
+    border: 1px solid var(--blue);
     color: #fff;
     font-size: 1rem;
     padding: 5px 10px;
@@ -102,6 +102,61 @@
 
 .details p {
     margin-right: 7px;
-    color: #f21487;
+    color: var(--blue);
     font-weight: 700;
+}
+
+
+@media (min-width:280px) and (max-width:476px) {
+    .chart {
+
+        width: 90%;
+        height: 40%;
+        padding: 0;
+
+    }
+        
+    .graph {
+        width: 100%;
+        height: 30%;
+    }
+
+
+    
+    .name img {
+        width: 30px;
+        height: 30px;
+        margin-right: 10px;
+    }
+    
+    .name p {
+        font-size: 1.2rem;
+        font-weight: 700;
+    }
+    .details {
+        display: none;
+    }
+    .types {
+        display: flex;
+        margin: 0;
+        margin-top: 10px;
+    }
+    
+    .types button {
+        background-color: #18181cdb;
+        border: 0.5px solid var(--blue);
+        color: #fff;
+        font-size: 0.7rem;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    
+    .types .selected {
+        background: var(--blue);
+        color: #fff;
+    }
+    #total_volume {
+        display: none;
+    }
+
 }

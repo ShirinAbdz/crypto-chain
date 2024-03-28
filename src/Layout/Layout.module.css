@@ -7,13 +7,13 @@
 
 :root {
     --main-linear-gradient: linear-gradient(90deg, #f21487, #c71cc6);
-    --blue:#00C4F4;
+    --blue: #00C4F4;
 
 
 }
 
 body {
-    background: #fff;
+    background: #001011;
 
 }
 
@@ -27,7 +27,7 @@ body {
     box-shadow: 0 0px 5px 0px rgba(226, 226, 229, 0.138);
     margin-bottom: 40px;
     padding: 10px 0;
-    border-bottom: 0.5px solid rgba(0, 0, 0, 0.33);
+    border-bottom: 0.5px solid rgba(255, 255, 255, 0.33);
 
 
 }
@@ -46,6 +46,12 @@ body {
     margin-left: 20px
 }
 
+.headerLogo {
+    color: #fff;
+    font-size: 1.8rem;
+    font-weight: 700;
+
+}
 
 .header {
     /* height: 100vh; */
@@ -56,27 +62,35 @@ body {
     width: 100%;
     position: relative;
     color: #000;
+    margin-bottom: 50px;
 }
 
 
 
 .headerContent {
+    color: #fff;
 
     width: 100%;
     margin-top: 70px;
     margin-bottom: 40px;
     margin: auto;
     border: 2px solid blue;
-    padding: 10px ;
+    padding: 10px;
 
+
+}
+
+.headerContent h1 span {
+    color: #46bedd;
+    font-weight: 600;
+    font-size: 40px;
 
 }
 
 
 
 
-
- .bitcoin img {
+.bitcoin img {
     position: relative;
     filter: drop-shadow(26px 26px 15px rgba(0, 0, 0, 0.907));
     z-index: 5;
@@ -156,7 +170,7 @@ svg {
     border-radius: 50%;
     position: relative;
     overflow: hidden;
-    border: 3px solid #fff;
+    border: 3px solid #ffffff;
     z-index: 1;
     background: var(--blue);
 }
@@ -240,14 +254,14 @@ svg {
     text-align: left;
 }
 
-
+/* 
 .text span {
     font-size: 1.3rem;
     font-weight: 400;
     line-height: 40px;
     filter: brightness(0.3);
     transform: translateY(-50px);
-}
+} */
 
 .text table th {
     padding-right: 3rem;
@@ -261,18 +275,26 @@ svg {
 
 
 
-.footer {
-    background-color: #1b1b1b;
-    margin-top: 40px;
-    background: rgba(115, 113, 113, 0.45);
-    backdrop-filter: blur(20px);
-    border-radius: 70px;
-}
-
 .footer img {
     width: 200px;
     height: 60px;
     padding: 10px 20px;
+}
+
+
+
+
+.footer {
+    width: 100%;
+    justify-content: space-between;
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    box-shadow: 0 0px 5px 0px rgba(226, 226, 229, 0.138);
+    margin-bottom: 40px;
+    padding: 10px 0;
+    border-top: 0.5px solid rgba(0, 0, 0, 0.33);
+
+
 }
 
 
@@ -301,15 +323,17 @@ svg {
         justify-content: center;
         margin-bottom: 20px;
     }
+
     .headerContent img {
         width: 200px;
     }
+
     .text h3 {
         display: none;
     }
 
 
-    .text  {
+    .text {
         padding: 0;
         font-size: 20px;
 

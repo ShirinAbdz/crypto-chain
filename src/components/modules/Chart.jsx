@@ -46,6 +46,7 @@ function Chart({ chart, setChart }) {
           </button>
           <button
             id="market_caps"
+            
             className={type === "market_caps" ? styles.selected : null}
           >
             Market Caps
@@ -85,7 +86,7 @@ const ChartComponent = ({ data, type }) => {
         <Line
           type="monotone"
           dataKey={type}
-          stroke=" #f21487"
+          stroke=" #00C4F4"
           strokeWidth="2px"
         />
         <CartesianGrid stroke="#40404276" />
