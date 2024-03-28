@@ -9,6 +9,7 @@
 
 body {
     font-family: "EB Garamond", serif;
+    color: #fff;
 }
 
 .container {
@@ -95,7 +96,7 @@ td {
     text-align: left;
     font-weight: 500;
     font-size: 1rem;
-    color: #000000;
+    color: #fff;
 }
 
 .success {

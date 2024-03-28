@@ -1,0 +1,5 @@
+.watched-coins-container {
+    max-height: 200px; /* Example height for the container */
+    overflow-y: auto;
+  }
+  

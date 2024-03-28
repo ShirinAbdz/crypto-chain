@@ -1,6 +1,5 @@
 import styles from "../Layout/Layout.module.css";
-import Bitcoin from "../assets/cube.png";
-import Logo from "../assets/cryptochain.svg";
+import Blockchain from "../assets/cube.png";
 
 import React from "react";
 import "../global.css";
@@ -68,16 +67,16 @@ function Layout({ children }) {
         </div>
 
         <div
-          className={`flex justify-between xs:flex-col sm:flex-row md:flex-row lg:flex-row xl:flex-row 2xl:flex-row ${styles.headerContent}`}
-        >
+          className={`flex justify-between xs:flex-col sm:flex-row md:flex-row lg:flex-row xl:flex-row 2xl:flex-row ${styles.headerContent}`}>
+        
           <div
-            className={`2xl:w-8/12 xl:w-6/12 lg:w-6/12 md:w-7/12 sm:w-10/12 xs:w-12/12  ${styles.text}`}
+            className={`2xl:w-8/12 xl:w-6/12 lg:w-6/12 md:w-7/12 sm:w-9/12 xs:w-12/12  ${styles.text}`}
           >
             <ul>
               <li>
                 <h1>
-                  The Best Platfrom to Analyze <span>Crypto Currency </span> Prices
-                  
+                  The Best Platfrom to Analyze <span>Crypto Currency </span>
+                  Prices
                 </h1>
               </li>
               <li>
@@ -92,67 +91,24 @@ function Layout({ children }) {
             </ul>
           </div>
           <div
-            className={` xs:w-4/12 sm:W-4/12 md:w-5/12 lg:w-5/12 xl:w-5/12 2xl:w-3/12 ${styles.bitcoin}`}
+            className={`xs:w-8/12 sm:w-8/12 md:w-5/12 xl:w-5/12 ${styles.bitcoin}`}
           >
-            <img src={Bitcoin} />
+            <img src={Blockchain} />
           </div>
         </div>
       </header>
       {children}
       <div className={`container-fluid ${styles.footer}`}>
-          <div className="row">
-            <div className="col-12">
-              <div className={styles.navbarContent}>
-                <div>
-                  <img
-                    className={styles.Logo}
-                    src={Logo}
-                    alt=" Crypto Chain's logo "
-                  />
+        <div className="row">
+          <div className="col-12">
+            <div className={styles.navbarContent}>
+            <div className={styles.footerLogo}>
+                  <h1> CrytoChain </h1>
                 </div>
-                <div className={styles.socialLinks}>
-                  <ul>
-                    <li>
-                      <a href="https://github.com/ShirinAbdz" target="_blank">
-                        <FontAwesomeIcon
-                          icon={faGithub}
-                          className={styles.icon}
-                        />
-                      </a>
-                    </li>
-                    <li>
-                      <a
-                        href="https://www.linkedin.com/in/shirin-abdollahzadeh-65b689199/"
-                        target="_blank"
-                      >
-                        <FontAwesomeIcon
-                          icon={faLinkedinIn}
-                          className={styles.icon}
-                        />
-                      </a>
-                    </li>
-                    <li>
-                      <a href="mailto:shiringohariii@gmail.com" target="_blank">
-                        <FontAwesomeIcon
-                          icon={faGoogle}
-                          className={styles.icon}
-                        />
-                      </a>
-                    </li>
-                    <li>
-                      <a href="https://twitter.com/Shirin_dev" target="_blank">
-                        <FontAwesomeIcon
-                          icon={faTwitter}
-                          className={styles.icon}
-                        />
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
             </div>
           </div>
         </div>
+      </div>
     </div>
   );
 }

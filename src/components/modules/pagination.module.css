@@ -8,9 +8,8 @@
 
 .pagination {
   margin-bottom: 30px 0;
-  font-family: "League Spartan", sans-serif;
   margin: 40px 0;
-  color: #000;
+  color: #fff;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -18,10 +17,9 @@
 
 .pagination button {
   width: 80px;
-  color: #000000;
+  color: #fff;
   border: none;
   cursor: pointer;
-  font-family: "League Spartan", sans-serif;
 }
 
 .pagination p {
@@ -38,17 +36,15 @@
 .selected {
   background: var(--blue);
   color: #000;
+  margin: 0 8px;
 }
 
 @media (min-width: 280px) and (max-width: 499px) {
 
   .pagination button {
     width: 20px;
-    color: #050505;
-    border: none;
     font-size: 1.1rem;
     cursor: pointer;
-    font-family: "League Spartan", sans-serif;
   }
 
   .pagination p {
@@ -59,4 +55,4 @@
   }
 
 
-} 
+}

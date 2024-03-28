@@ -24,7 +24,7 @@ body {
     justify-content: space-between;
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
-    box-shadow: 0 0px 5px 0px rgba(226, 226, 229, 0.138);
+    /* box-shadow: 0 0px 5px 0px rgba(226, 226, 229, 0.138); */
     margin-bottom: 40px;
     padding: 10px 0;
     border-bottom: 0.5px solid rgba(255, 255, 255, 0.33);
@@ -54,7 +54,6 @@ body {
 }
 
 .header {
-    /* height: 100vh; */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -69,12 +68,10 @@ body {
 
 .headerContent {
     color: #fff;
-
     width: 100%;
     margin-top: 70px;
     margin-bottom: 40px;
     margin: auto;
-    border: 2px solid blue;
     padding: 10px;
 
 
@@ -94,7 +91,6 @@ body {
     position: relative;
     filter: drop-shadow(26px 26px 15px rgba(0, 0, 0, 0.907));
     z-index: 5;
-    border: 2px solid blue;
     margin: auto;
 
 }
@@ -239,29 +235,21 @@ svg {
 }
 
 .text {
-    /* padding: 50px; */
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 50px ;
 
 }
 
-
+.text h1{
+    margin-bottom: 20px;
+}
 
 .text ul {
     margin: auto;
-    border: 2px solid blue;
     text-align: left;
 }
-
-/* 
-.text span {
-    font-size: 1.3rem;
-    font-weight: 400;
-    line-height: 40px;
-    filter: brightness(0.3);
-    transform: translateY(-50px);
-} */
 
 .text table th {
     padding-right: 3rem;
@@ -324,6 +312,13 @@ svg {
         margin-bottom: 20px;
     }
 
+    .headerContent h1 span {
+        font-size: 25px;
+    }
+    .headerLogo {
+        display: none;
+    }
+
     .headerContent img {
         width: 200px;
     }
@@ -362,14 +357,18 @@ svg {
 }
 
 @media(min-width:477px) and (max-width:639px) {
-    .text table {
+    .navbar .headerLogo {
         display: none;
     }
 
     .text h1 {
-        font-size: 40px;
+        font-size: 30px;
         font-weight: 900;
         text-align: center;
+    }
+    .text h3 {
+        text-align: center;
+        margin-bottom: 0;
     }
 
     .headerContent {
@@ -385,6 +384,9 @@ svg {
     .navbarContent {
         display: inline-block;
     }
+    .bitcoin {
+        margin: auto;
+    }
 
 }
 
@@ -392,18 +394,28 @@ svg {
 
 @media(min-width:640px) and (max-width:768px) {
 
-    .text h1 {
-        font-size: 20px;
+    .text h1 , .text h1 span {
+        font-size: 25px;
         font-weight: 700;
     }
+    .text {
+        padding: 10px;
+
+    }
+     
 }
 
 @media (min-width:769px) and (max-width:1024px) {
 
 
-    .text h1 {
-        font-size: 1.5rem;
+    .text h1 , .text h1 span {
+        font-size: 40px;
         font-weight: 700;
+
+    }
+    .text {
+        padding: 10px;
+
     }
 
 }
@@ -411,7 +423,8 @@ svg {
 @media (min-width:1025px) and (max-width:1280px) {
 
 
-    .text h1 {
+    .text h1 , .text h1 span {
+        font-size: 50px;
         font-weight: 700;
     }
 }
@@ -419,8 +432,8 @@ svg {
 @media (min-width:1281px) and (max-width:1580px) {
 
 
-    .text h1 {
-        font-size: 2rem;
+    .text h1 , .text h1 span {
+        font-size: 50px;
         font-weight: 700;
     }
 
