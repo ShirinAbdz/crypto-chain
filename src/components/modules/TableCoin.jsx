@@ -1,3 +1,4 @@
+import React from "react";
 import ChrtUp from "../../assets/chart-up.svg";
 import ChrtDwn from "../../assets/chart-down.svg";
 import { ThreeDots } from "react-loader-spinner";
@@ -5,7 +6,10 @@ import { ThreeDots } from "react-loader-spinner";
 import styles from "../modules/TableCoin.module.css";
 import { marketChart } from "../../services/cryptoApi";
 
-function TableCoin({ coins, isLoading, setChart }) {
+const coinsPerPage = 60; // Number of coins per page
+
+function TableCoin({ coins, isLoading, setChart, currentPage = 1 }) {
+  console.log(`Current Page: ${currentPage}`);
   return (
     <>
       {isLoading ? (
@@ -16,7 +20,7 @@ function TableCoin({ coins, isLoading, setChart }) {
         <table className={styles.table}>
           <thead>
             <tr>
-              <th>numder</th>
+              <th>Number</th>
               <th>Coin</th>
               <th>Name</th>
               <th>Price</th>
@@ -26,9 +30,22 @@ function TableCoin({ coins, isLoading, setChart }) {
             </tr>
           </thead>
           <tbody>
-            {coins.map((coin) => (
-              <TableRow coin={coin} key={coin.id} setChart={setChart} />
-            ))}
+            {coins.map((coin, index) => {
+              // Calculate the starting number for the current page
+              const startNumber = (currentPage - 1) * coinsPerPage + 1;
+              console.log(`Start Number: ${startNumber}`);
+              // Calculate the row number for the current coin
+              const rowNumber = startNumber + index;
+              console.log(`Row Number: ${rowNumber}`);
+              return (
+                <TableRow
+                  coin={coin}
+                  key={coin.id}
+                  setChart={setChart}
+                  rowNumber={rowNumber}
+                />
+              );
+            })}
           </tbody>
         </table>
       )}
@@ -36,7 +53,7 @@ function TableCoin({ coins, isLoading, setChart }) {
   );
 }
 
-const TableRow = ({ coin, setChart }) => {
+const TableRow = ({ coin, setChart, rowNumber }) => {
   const {
     id,
     name,
@@ -59,14 +76,14 @@ const TableRow = ({ coin, setChart }) => {
 
   return (
     <tr>
-      <td></td>
+      <td>{rowNumber}</td>
       <td>
         <div className={styles.symbol} onClick={showHandler}>
           <img src={image} alt={`${symbol.toUpperCase()} logo`} />
           <span>{symbol.toUpperCase()}</span>
         </div>
       </td>
-      <td >{name}</td>
+      <td>{name}</td>
       <td className={price_change > 0 ? styles.success : styles.error}>
         {price_change.toFixed(2)}%
       </td>

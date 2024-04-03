@@ -65,8 +65,8 @@ body {
     text-align: start;
 }
 
-.table td:nth-child(1):hover {
-    background: #82639f8b;
+.table td:nth-child(2):hover {
+    background: #6A4EB3;
     animation: 4s ease-in-out;
 }
 
@@ -116,7 +116,7 @@ td {
 
 
 
-@media (min-width: 280px) and (max-width: 476px) {
+@media (min-width: 200px) and (max-width: 476px) {
 
     .table {
         overflow-y: scroll;
@@ -168,7 +168,29 @@ td {
     }
 }
 
-@media (min-width: 500px) and (max-width: 576px) {
+@media (min-width: 477px) and (max-width: 576px) {
+
+    .table {
+        overflow-y: scroll;
+        width: 100%;
+    }
+
+    .table th:nth-child(4),
+    .table th:nth-child(3),
+
+    .table th:nth-child(5),
+    .table td:nth-child(4),
+    .table td:nth-child(3),
+
+    .table td:nth-child(5) {
+        display: none;
+    }
+
+
+}
+
+
+@media (min-width: 577px) and (max-width: 760px) {
 
     .table {
         overflow-y: scroll;

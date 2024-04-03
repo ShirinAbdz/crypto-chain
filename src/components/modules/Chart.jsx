@@ -67,7 +67,7 @@ function Chart({ chart, setChart }) {
             <p>ATH: </p>
             <span>${chart.coin.ath}</span>
           </div>
-          <div>
+          <div className={styles.marketCap}>
             <p>Market Cap: </p>
             <span>${chart.coin.market_cap}</span>
           </div>

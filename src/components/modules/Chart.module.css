@@ -36,7 +36,7 @@
 }
 
 .chart {
-    width: 800px;
+    width: 60%;
     margin: auto;
     padding-left: 20px;
     margin-top: 50px;
@@ -46,8 +46,9 @@
 }
 
 .graph {
-    width: 760px;
+    width: 100%;
     height: 300px;
+    padding-right: 20px;
 }
 
 .name {
@@ -115,33 +116,35 @@
         padding: 0;
 
     }
-        
+
     .graph {
         width: 100%;
         height: 30%;
     }
 
 
-    
+
     .name img {
         width: 30px;
         height: 30px;
         margin-right: 10px;
     }
-    
+
     .name p {
         font-size: 1.2rem;
         font-weight: 700;
     }
+
     .details {
         display: none;
     }
+
     .types {
         display: flex;
         margin: 0;
         margin-top: 10px;
     }
-    
+
     .types button {
         background-color: #18181cdb;
         border: 0.5px solid var(--blue);
@@ -150,13 +153,34 @@
         border-radius: 5px;
         cursor: pointer;
     }
-    
+
     .types .selected {
         background: var(--blue);
         color: #fff;
     }
+
     #total_volume {
         display: none;
     }
 
 }
+
+@media (min-width:477px) and (max-width:768px) {
+   .details div {
+
+    font-size: 1rem;
+   }
+
+
+   .types button {
+    width:50%;
+   }
+ 
+   .details .marketCap {
+    display: none;
+   }
+   .details {
+    display: flex;
+    justify-content: space-between;
+   }
+} 

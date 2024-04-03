@@ -270,7 +270,10 @@ svg {
 }
 
 
-
+.footerLogo {
+    margin: auto;
+    font-size: 1.5rem;
+}
 
 .footer {
     width: 100%;
