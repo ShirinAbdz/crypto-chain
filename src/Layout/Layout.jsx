@@ -20,7 +20,7 @@ function Layout({ children }) {
             <div className="col-12">
               <div className={styles.navbarContent}>
                 <div className={styles.headerLogo}>
-                  <h1>CrytoChain</h1>
+                  <h1>CryptoChain</h1>
                 </div>
                 <div className={styles.socialLinks}>
                   <ul>
