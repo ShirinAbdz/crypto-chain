@@ -20,6 +20,13 @@
   color: #fff;
   border: none;
   cursor: pointer;
+  background-color: #3132324a;
+  border-radius: 50px;
+  padding: 4px 0;
+}
+.pagination button:hover {
+  background-color: #7d797b8a;
+  transition: .3s ease-in;
 }
 
 .pagination p {
