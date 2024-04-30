@@ -103,7 +103,7 @@ function Layout({ children }) {
           <div className="col-12">
             <div className={styles.navbarContent}>
             <div className={styles.footerLogo}>
-                  <h1> CrytoChain </h1>
+                  <h1> CryptoChain </h1>
                 </div>
             </div>
           </div>

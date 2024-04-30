@@ -1,4 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -10,7 +9,6 @@ body {
   color: #fff;
   max-width: 1200px;
   margin: auto;
-  font-family: "Inter", sans-serif;
 
 }
 
